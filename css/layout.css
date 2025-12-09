@@ -1,0 +1,86 @@
+/* ===========================
+   LAYOUT.CSS
+   Header, Footer, Contenedores, Grid/Flex
+   =========================== */
+
+/* Header */
+.site-header {
+  background: var(--surface-1);
+  border-bottom: 1px solid var(--border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+}
+.brand__icon {
+  width: 32px;
+  height: 32px;
+}
+.brand__name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-1);
+}
+.site-nav {
+  display: flex;
+  gap: var(--space-3);
+}
+.site-nav a {
+  color: var(--text-1);
+  font-weight: 600;
+}
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--surface-1);
+  border-top: 1px solid var(--border);
+  padding: var(--space-3);
+}
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-3);
+}
+.socials a {
+  color: var(--text-2);
+}
+.socials a:hover {
+  color: var(--accent);
+}
+
+/* Contenedores generales */
+.section {
+  padding: var(--space-5) 0;
+}
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+.flex {
+  display: flex;
+  gap: var(--space-3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-nav {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .brand__name {
+    font-size: 1rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero__image {
+    margin-top: var(--space-3);
+  }
+}

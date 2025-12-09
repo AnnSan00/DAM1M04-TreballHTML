@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ajedrez — Història</title>
+
+    <!-- Google Fonts + Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+
+    <!-- CSS del projecte -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link rel="icon" href="assets/icons/chess.svg" type="image/svg+xml">
+    <meta name="description" content="Història del joc d'escacs. Orígens, evolució i expansió mundial.">
+  </head>
+  <body>
+    <!-- Header comú -->
+    <header class="site-header">
+      <div class="brand container">
+        <img src="assets/icons/chess.svg" alt="Icona Ajedrez" class="brand__icon" />
+        <a href="index.html" class="brand__name">Ajedrez</a>
+        <nav class="site-nav">
+          <a href="index.html">Inici</a>
+          <a href="instruccions.html">Instruccions</a>
+          <a href="historia.html" aria-current="page">Història</a>
+          <a href="contacte.html">Contacte</a>
+          <a href="about.html">About us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Història</h1>
+
+      <!-- Carrusel CSS pur -->
+      <section class="carousel">
+        <div class="track">
+          <img src="assets/img/story1.jpg" alt="Origen a l'Índia">
+          <img src="assets/img/story2.jpg" alt="Expansió a Pèrsia">
+          <img src="assets/img/story3.jpg" alt="Europa medieval">
+          <img src="assets/img/story4.jpg" alt="Escacs moderns">
+        </div>
+      </section>
+
+      <!-- Seccions descriptives -->
+      <section class="story grid">
+        <article>
+          <h2>Orígens</h2>
+          <p>Els escacs tenen el seu origen al joc indi anomenat <em>chaturanga</em>, que representava les quatre divisions de l'exèrcit: infanteria, cavalleria, elefants i carros.</p>
+        </article>
+        <article>
+          <h2>Evolució</h2>
+          <p>Amb l'expansió a Pèrsia es va convertir en <em>shatranj</em>, i posteriorment va arribar a Europa medieval, on les regles es van adaptar fins a formar el joc modern.</p>
+        </article>
+        <article>
+          <h2>Escacs moderns</h2>
+          <p>Al segle XV es van establir les regles actuals, amb la reina i l'alfil adquirint els moviments que coneixem avui. Avui dia, els escacs són un esport mental reconegut mundialment.</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer comú -->
+    <footer class="site-footer">
+      <div class="container footer-right">
+        <span class="copyright">© 2025 Ajedrez</span>
+        <div class="socials" aria-label="Xarxes socials">
+          <a aria-label="Twitter" href="https://twitter.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">share</span>
+          </a>
+          <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>
+          </a>
+          <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">group</span>
+          </a>
+          <a aria-label="TikTok" href="https://tiktok.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">music_note</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

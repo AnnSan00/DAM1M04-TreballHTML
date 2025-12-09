@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ajedrez — Instruccions</title>
+
+    <!-- Google Fonts + Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+
+    <!-- CSS del projecte -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link rel="icon" href="assets/icons/chess.svg" type="image/svg+xml">
+    <meta name="description" content="Instruccions per jugar a Ajedrez. Guia d'ús i mecàniques del joc.">
+  </head>
+  <body>
+    <!-- Header comú -->
+    <header class="site-header">
+      <div class="brand container">
+        <img src="assets/icons/chess.svg" alt="Icona Ajedrez" class="brand__icon" />
+        <a href="index.html" class="brand__name">Ajedrez</a>
+        <nav class="site-nav">
+          <a href="index.html">Inici</a>
+          <a href="instruccions.html" aria-current="page">Instruccions</a>
+          <a href="historia.html">Història</a>
+          <a href="contacte.html">Contacte</a>
+          <a href="about.html">About us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Instruccions</h1>
+
+      <!-- Apartat d’instruccions amb captures -->
+      <section class="guide">
+        <figure class="card card--hover">
+          <img src="assets/img/opening.jpg" alt="Posició d'obertura">
+          <figcaption><strong>Obertura:</strong> Controla el centre amb peons i cavalls.</figcaption>
+        </figure>
+        <figure class="card card--hover">
+          <img src="assets/img/midgame.jpg" alt="Tàctiques de mig joc">
+          <figcaption><strong>Mig joc:</strong> Desenvolupa plans i combina peces.</figcaption>
+        </figure>
+        <figure class="card card--hover">
+          <img src="assets/img/endgame.jpg" alt="Finals bàsics">
+          <figcaption><strong>Final:</strong> Coneix finals bàsics i promocions.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Mecàniques del joc -->
+      <section class="mechanics">
+        <h2>Mecàniques del joc</h2>
+        <div class="grid">
+          <article class="card card--hover">
+            <h3>Moviment</h3>
+            <p>Peó, cavall, alfil, torre, reina i rei.</p>
+          </article>
+          <article class="card card--hover">
+            <h3>Enroc</h3>
+            <p>Protegeix el rei i activa la torre.</p>
+          </article>
+          <article class="card card--hover">
+            <h3>Captura al pas</h3>
+            <p>Regla especial de peons.</p>
+          </article>
+          <article class="card card--hover">
+            <h3>Escac i mat</h3>
+            <p>Objectiu del joc.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer comú -->
+    <footer class="site-footer">
+      <div class="container footer-right">
+        <span class="copyright">© 2025 Ajedrez</span>
+        <div class="socials" aria-label="Xarxes socials">
+          <a aria-label="Twitter" href="https://twitter.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">share</span>
+          </a>
+          <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>
+          </a>
+          <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">group</span>
+          </a>
+          <a aria-label="TikTok" href="https://tiktok.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">music_note</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

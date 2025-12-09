@@ -1,0 +1,113 @@
+/* ===========================
+   BASE.CSS
+   Reset + Variables + Tipografía + Estilos globales
+   =========================== */
+
+/* Variables globales */
+:root {
+  /* Colores principales */
+  --surface-0: #0f1320;   /* Fondo principal */
+  --surface-1: #13172a;   /* Header/Footer */
+  --surface-2: #1b2140;   /* Tarjetas, secciones */
+  --text-1: #e9eef8;      /* Texto principal */
+  --text-2: #b6c0d4;      /* Texto secundario */
+  --accent: #e0aa3e;      /* Dorado para acentos */
+  --border: #2a3358;      /* Bordes */
+
+  /* Espaciados */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+
+  /* Tipografía */
+  --font-main: "Rubik", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y cuerpo */
+html {
+  font-family: var(--font-main);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--surface-0);
+  color: var(--text-1);
+  line-height: 1.5;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Enlaces */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Listas */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Contenedor central */
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+/* Titulares */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-1);
+}
+
+/* Párrafos */
+p {
+  color: var(--text-2);
+  margin-bottom: var(--space-3);
+}
+
+/* Botones genéricos */
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+}
+
+/* Formularios básicos */
+input, textarea, select {
+  font-family: var(--font-main);
+  font-size: 1rem;
+}
+
+/* Scrollbar (estética opcional) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9962d;
+}

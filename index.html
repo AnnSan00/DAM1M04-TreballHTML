@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ajedrez — Inici</title>
+
+    <!-- Google Fonts + Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap">
+
+    <!-- CSS del projecte -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link rel="icon" href="assets/icons/chess.svg" type="image/svg+xml">
+    <meta name="description" content="Ajedrez — El joc d’estratègia definitiu. Aprèn, practica i guanya.">
+  </head>
+  <body>
+    <!-- Header comú -->
+    <header class="site-header">
+      <div class="brand container">
+        <img src="assets/icons/chess.svg" alt="Icona Ajedrez" class="brand__icon" />
+        <a href="index.html" class="brand__name">Ajedrez</a>
+        <nav class="site-nav">
+          <a href="index.html" aria-current="page">Inici</a>
+          <a href="instruccions.html">Instruccions</a>
+          <a href="historia.html">Història</a>
+          <a href="contacte.html">Contacte</a>
+          <a href="about.html">About us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero container">
+        <div class="hero__text">
+          <h1>Domina el tauler. Pensament en estat pur.</h1>
+          <p>El joc d’estratègia definitiu. Aprèn, practica, guanya.</p>
+          <a class="btn" href="instruccions.html">Començar</a>
+        </div>
+        <div class="hero__image">
+          <img src="assets/img/hero-chess.jpg" alt="Tauler d'escacs en primer pla" />
+        </div>
+      </section>
+
+      <!-- Aventura del joc amb animació en scroll -->
+      <section class="aventura container">
+        <h2>L’aventura del joc</h2>
+        <div class="aventura__steps">
+          <article class="step reveal">
+            <h3>Obertura</h3>
+            <p>Controla el centre, desenvolupa cavalls i alfils, i enroca a temps.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Mig joc</h3>
+            <p>Coordina atac i defensa, detecta tàctiques: forquilla, clau, desviació.</p>
+          </article>
+          <article class="step reveal">
+            <h3>Final</h3>
+            <p>Converteix avantatge en victòria amb tècnica: oposició, caselles clau.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Animació vectorial (SVG) -->
+      <section class="vector container">
+        <h2>Animació vectorial</h2>
+        <div class="vector__box">
+          <svg class="knight" viewBox="0 0 120 120" role="img" aria-label="Cavall d'escacs animat">
+            <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="2"/>
+            <g fill="currentColor">
+              <path d="M40 80 Q60 60 70 40 L80 45 Q75 55 85 60 L70 75 Z"/>
+              <rect x="35" y="82" width="50" height="6" rx="3"/>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!-- Secció: Com es juga? -->
+      <section class="howto container">
+        <h2>Com es juga?</h2>
+        <ul class="list">
+          <li><strong>Objectiu:</strong> fer escac i mat al rei rival.</li>
+          <li><strong>Moviments:</strong> cada peça (peó, cavall, alfil, torre, reina, rei) té patrons propis.</li>
+          <li><strong>Regles especials:</strong> enroc, promoció, captura al pas.</li>
+          <li><strong>Temps:</strong> mode amb rellotge (blitz, ràpid, clàssic).</li>
+        </ul>
+        <p><a href="instruccions.html" class="link">Veure instruccions detallades</a></p>
+      </section>
+    </main>
+
+    <!-- Footer comú -->
+    <footer class="site-footer">
+      <div class="container footer-right">
+        <span class="copyright">© 2025 Ajedrez</span>
+        <div class="socials" aria-label="Xarxes socials">
+          <a aria-label="Twitter" href="https://twitter.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">share</span>
+          </a>
+          <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>
+          </a>
+          <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">group</span>
+          </a>
+          <a aria-label="TikTok" href="https://tiktok.com" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" aria-hidden="true">music_note</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
