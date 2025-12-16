@@ -20,6 +20,8 @@
   display: grid;
   gap: var(--space-4);
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: var(--space-5);
+  margin-top: var(--space-5);
 }
 
 .mechanics .grid {

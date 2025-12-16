@@ -40,6 +40,7 @@
   background: var(--surface-1);
   border-top: 1px solid var(--border);
   padding: var(--space-3);
+  margin-top: var(--space-3);
 }
 .footer-right {
   display: flex;
