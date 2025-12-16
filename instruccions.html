@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="ca">
   <head>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Ajedrez — Instruccions</title>
+    <title>Virus — Instruccions</title>
 
     <!-- Google Fonts + Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap">
@@ -16,14 +15,15 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
 
-    <link rel="icon" href="assets/icons/chess.svg" type="image/svg+xml">
-    <meta name="description" content="Instruccions per jugar a Ajedrez. Guia d'ús i mecàniques del joc.">
+    <link rel="icon" href="assets/icons/virus.svg" type="image/svg+xml">
+    <meta name="description" content="Instruccions per jugar a Virus, el joc de cartes. Guia d'ús, mecàniques i objectius.">
   </head>
   <body>
     <!-- Header comú -->
     <header class="site-header">
       <div class="brand container">
-        <span class="material-symbols-outlined">playing_cards</span>
+        <span class="material-symbols-outlined">playing_cards
+        </span>
         <a href="index.html" class="brand__name">Ajedrez</a>
         <nav class="site-nav">
           <a href="index.html">Inici</a>
@@ -35,22 +35,27 @@
       </div>
     </header>
 
+    
     <main class="container">
       <h1>Instruccions</h1>
 
       <!-- Apartat d’instruccions amb captures -->
-      <section class="guide">
+      <section class="guide" aria-labelledby="guia-titol">
+        <h2 id="guia-titol" class="visually-hidden">Guia amb imatges</h2>
+
         <figure class="card card--hover">
-          <img src="assets/img/opening.jpg" alt="Posició d'obertura">
-          <figcaption><strong>Obertura:</strong> Controla el centre amb peons i cavalls.</figcaption>
+          <img src="assets/img/setup.jpg" alt="Preparació de la partida amb baralla de cartes Virus">
+          <figcaption><strong>Preparació:</strong> Barreja les cartes i reparteix 3 a cada jugador. Pila de robades i descarte.</figcaption>
         </figure>
+
         <figure class="card card--hover">
-          <img src="assets/img/midgame.jpg" alt="Tàctiques de mig joc">
-          <figcaption><strong>Mig joc:</strong> Desenvolupa plans i combina peces.</figcaption>
+          <img src="assets/img/play.jpg" alt="Exemple de torn jugant òrgans i virus">
+          <figcaption><strong>En joc:</strong> Juga una carta per torn: òrgan, virus, medicina o tractament. Roba fins a tenir 3.</figcaption>
         </figure>
+
         <figure class="card card--hover">
-          <img src="assets/img/endgame.jpg" alt="Finals bàsics">
-          <figcaption><strong>Final:</strong> Coneix finals bàsics i promocions.</figcaption>
+          <img src="assets/img/objective.jpg" alt="Tauler amb quatre òrgans sans">
+          <figcaption><strong>Objectiu:</strong> Aconsegueix 4 òrgans sans al teu tauler. Bloqueja els rivals amb virus!</figcaption>
         </figure>
       </section>
 
@@ -59,20 +64,33 @@
         <h2>Mecàniques del joc</h2>
         <div class="grid">
           <article class="card card--hover">
-            <h3>Moviment</h3>
-            <p>Peó, cavall, alfil, torre, reina i rei.</p>
+            <h3>Tipus de cartes</h3>
+            <p><strong>Òrgans:</strong> cor, os, cervell, estómac. <strong>Virus:</strong> infecten òrgans. <strong>Medicines:</strong> curen o immunitzen. <strong>Tractaments:</strong> accions especials.</p>
           </article>
+
           <article class="card card--hover">
-            <h3>Enroc</h3>
-            <p>Protegeix el rei i activa la torre.</p>
+            <h3>Torn de joc</h3>
+            <p><strong>Acció:</strong> juga una carta o descarta qualsevol nombre de cartes. <strong>Roba:</strong> fins a tenir 3 a la mà. Les cartes es resolen immediatament.</p>
           </article>
+
           <article class="card card--hover">
-            <h3>Captura al pas</h3>
-            <p>Regla especial de peons.</p>
+            <h3>Infecció i curació</h3>
+            <p><strong>Contagi:</strong> un virus sobre un òrgan sa l’infecta. <strong>Medicina:</strong> cura una infecció. <strong>Doble medicina:</strong> immunitza l’òrgan.</p>
           </article>
+
           <article class="card card--hover">
-            <h3>Escac i mat</h3>
-            <p>Objectiu del joc.</p>
+            <h3>Tractaments</h3>
+            <p><strong>Transplantament:</strong> intercanvia òrgans entre jugadors. <strong>Guant esteril:</strong> protegeix un torn. <strong>Intercanvi:</strong> canvia cartes de la mà.</p>
+          </article>
+
+          <article class="card card--hover">
+            <h3>Condicions de victòria</h3>
+            <p><strong>Guanyes</strong> quan tens 4 òrgans sans (no infectats ni destruïts). <strong>Immunitat</strong> impedeix futurs virus sobre l’òrgan.</p>
+          </article>
+
+          <article class="card card--hover">
+            <h3>Conflictes comuns</h3>
+            <p><strong>Empats:</strong> continua fins que algú mantingui 4 òrgans al final del seu torn. <strong>Baralla:</strong> barreja descarte quan s’acaba el mazo.</p>
           </article>
         </div>
       </section>
@@ -81,7 +99,7 @@
     <!-- Footer comú -->
     <footer class="site-footer">
       <div class="container footer-right">
-        <span class="copyright">© 2025 Ajedrez</span>
+        <span class="copyright">© 2025 Virus</span>
         <div class="socials" aria-label="Xarxes socials">
           <a aria-label="Twitter" href="https://twitter.com" target="_blank" rel="noopener">
             <span class="material-symbols-outlined" aria-hidden="true">share</span>
