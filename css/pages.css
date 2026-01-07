@@ -74,6 +74,7 @@ figure.card figcaption {
 /* ---------- CONTACTE ---------- */
 .map iframe {
   border-radius: .75rem;
+  width: 100%;
 }
 .contact-info {
   display: grid;

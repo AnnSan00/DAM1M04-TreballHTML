@@ -24,6 +24,14 @@
       <div class="brand container">
         <span class="material-symbols-outlined">playing_cards</span>
         <a href="index.html" class="brand__name">Virus</a>
+        <!-- Botón hamburguesa --> 
+         <input type="checkbox" id="menu-toggle" class="menu-toggle"> 
+         <label for="menu-toggle" class="hamburguesa"> 
+          <span></span> 
+          <span></span> 
+          <span></span> 
+        </label>
+        <!-- Menú de navegación -->
         <nav class="site-nav">
           <a href="index.html">Inici</a>
           <a href="instruccions.html">Instruccions</a>
@@ -65,24 +73,28 @@
             <label for="nom">Nom</label>
             <input id="nom" name="nom" type="text" required
                    pattern="^[A-Za-zÀ-ÿ' -]{2,40}$"
+                   placeholder="Nom complet"
                    title="Entre 2 i 40 caràcters. Lletres, espais, guions i apòstrofs.">
           </div>
           <div class="field">
             <label for="tel">Telèfon</label>
             <input id="tel" name="tel" type="tel" required
                    pattern="^(?:\\+?\\d{1,3})?[ ]?\\d{9}$"
+                   placeholder="+34600000000"
                    title="9 dígits, opcional prefix (+34).">
           </div>
           <div class="field">
             <label for="mail">Correu electrònic</label>
             <input id="mail" name="mail" type="email" required
                    pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+                   placeholder="ejemplo@correo.com"
                    title="Format correu vàlid, ex: usuari@domini.com">
           </div>
           <div class="field">
             <label for="peticio">Text de la petició</label>
             <textarea id="peticio" name="peticio" required
                       pattern="^.{10,500}$"
+                      placeholder="Escriu aquí la teva petició"
                       title="Entre 10 i 500 caràcters."></textarea>
           </div>
           <button class="btn" type="submit">Enviar</button>

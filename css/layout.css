@@ -4,6 +4,29 @@
    =========================== */
 
 /* Header */
+.menu-toggle { 
+  display: none; 
+} 
+
+/* Estilo del botón hamburguesa */
+.hamburguesa { 
+  display: none; 
+  cursor: pointer; 
+  flex-direction: column; 
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  margin-left: auto;
+  user-select: none;
+} 
+.hamburguesa span { 
+  display: block; 
+  height: 3px; 
+  background: #fff; 
+  border-radius: 2px; 
+  transition: transform .18s ease, opacity .18s ease;
+}
+
 .site-header {
   background: var(--surface-1);
   border-bottom: 1px solid var(--border);
@@ -13,6 +36,7 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-3);
+  position: relative; 
 }
 .brand__icon {
   width: 32px;
@@ -70,10 +94,61 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .site-nav {
-    flex-wrap: wrap;
-    gap: var(--space-2);
+  .hamburguesa { 
+    display: flex; 
+  } 
+
+  .site-nav { 
+    display: none;
+    flex-direction: column; 
+    gap: 0; 
+    background: #111111; 
+    padding: 1rem; 
+    position: absolute; 
+    top: 100%; 
+    right: 0;
+    left: auto; 
+    width: 200px; 
+    border: 1px solid #1976D2; 
+    border-radius: .5rem; 
+    overflow: hidden; 
+    z-index: 20; 
+    transform-origin: top right; 
+    transform: scaleY(.96); 
+    opacity: 0; 
+    transition: transform .16s ease, opacity .16s ease; 
+    pointer-events: none;
+  } 
+
+  .site-nav a {
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #1976D2;
+    color: inherit;
   }
+  .site-nav a[aria-current="page"] { 
+    font-weight: 600; 
+    color: var(--accent);
+  }
+
+  /* Cuando el checkbox está marcado, mostrar menú */
+  .menu-toggle:checked ~ .site-nav { 
+    display: flex; 
+    opacity: 1; 
+    transform: scaleY(1); 
+    pointer-events: auto;
+  }
+
+  /* Transformar la hamburguesa en una X */
+  .menu-toggle:checked + .hamburguesa span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  .menu-toggle:checked + .hamburguesa span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle:checked + .hamburguesa span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+
   .brand__name {
     font-size: 1rem;
   }

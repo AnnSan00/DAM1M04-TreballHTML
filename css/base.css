@@ -97,7 +97,7 @@ input, textarea, select {
   font-size: 1rem;
 }
 
-/* Scrollbar (estética opcional) */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
